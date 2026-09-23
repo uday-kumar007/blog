@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DevBlog - Create Blog</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        Dev<span>Blog</span>
+    </a>
+
+    <nav class="nav-links">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="dashboard.html">
+            Dashboard
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main class="create-page">
+
+    <div class="create-card">
+
+        <div class="create-header">
+
+            <span class="section-label">
+                CREATE CONTENT
+            </span>
+
+            <h1>
+                Write a New Blog
+            </h1>
+
+            <p>
+                Share your knowledge with other developers.
+            </p>
+
+        </div>
+
+
+        <form id="blogForm">
+
+            <div class="input-group">
+
+                <label for="blogTitle">
+                    Blog Title
+                </label>
+
+                <input
+                    type="text"
+                    id="blogTitle"
+                    placeholder="Enter blog title"
+                    required
+                >
+
+            </div>
+
+
+            <div class="input-group">
+
+                <label for="blogCategory">
+                    Category
+                </label>
+
+                <select
+                    id="blogCategory"
+                    required>
+
+                    <option value="">
+                        Select category
+                    </option>
+
+                    <option value="Programming">
+                        Programming
+                    </option>
+
+                    <option value="Web Development">
+                        Web Development
+                    </option>
+
+                    <option value="Artificial Intelligence">
+                        Artificial Intelligence
+                    </option>
+
+                    <option value="Data Science">
+                        Data Science
+                    </option>
+
+                    <option value="Career">
+                        Career
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="input-group">
+
+                <label for="blogContent">
+                    Blog Content
+                </label>
+
+                <textarea
+                    id="blogContent"
+                    placeholder="Write your blog here..."
+                    required></textarea>
+
+            </div>
+
+
+            <div class="form-buttons">
+
+                <a
+                    href="dashboard.html"
+                    class="btn cancel-btn">
+
+                    Cancel
+
+                </a>
+
+
+                <button
+                    type="submit"
+                    class="btn primary-btn">
+
+                    Publish Blog
+
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</main>
+
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
